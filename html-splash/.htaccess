@@ -1,0 +1,14 @@
+RewriteEngine on
+RewriteOptions inherit
+
+#RewriteCond %{HTTP_HOST} ^fenceviewer\.com$ [OR]
+#RewriteCond %{HTTP_HOST} ^www\.fenceviewer\.com$
+#RewriteRule ^site\/$ "http\:\/\/www\.fenceviewer\.com\/" [R=301,L]
+
+# redirect to www.
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^site\/?(.*)$ "http\:\/\/ellsworthamerican\.com\/$1" [R=301,L,QSA]
