@@ -7,6 +7,7 @@
 <!--[if gt IE 8]><!-->
 <?php /*
 	28Aug17 - zig add gtm function after opening body tag
+	7Nov17 - zig - add broadstreet js script.
 */ ?>
 <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
 <head>
@@ -20,7 +21,7 @@
 			echo '<link rel="icon" type="image/png" href="'.$be_themes_data['favicon']['url'].'">';
 		}
 	?>
-
+	<script data-cfasync="false" type="text/javascript" src="//cdn.broadstreetads.com/init.js"></script> <?php /* zig */ ?>
     <?php
     	if ( is_singular() ) {
     		wp_enqueue_script( 'comment-reply' );
