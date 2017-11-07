@@ -59,6 +59,15 @@ input[type="submit"] {
 
 /*** slidebar in oshine slidebar is above main content *** */
 /*  header stuff - here */
+#header-top-bar-left {
+  width: 100%;
+  text-align: center; }
+  #header-top-bar-left #topbar-menu li {
+    padding: 10px;
+    font-family: "Roboto Condensed"; }
+  #header-top-bar-left #topbar-menu li:after {
+    content: none; }
+
 /*** styling of content */
 /*** styling of content */
 #content.right-sidebar-page {
