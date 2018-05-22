@@ -68,6 +68,9 @@ input[type="submit"] {
   #header-top-bar-left #topbar-menu li:after {
     content: none; }
 
+.ad-container span {
+  display: inline-block; }
+
 /*** styling of content */
 /*** styling of content */
 #content.right-sidebar-page {
